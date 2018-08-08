@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import { Button } from 'antd';
 import { connect } from 'react-redux';
-import Login from '../Login/Login';
+import Routes from '../../Routes';
 import AppWrapper from './App.style';
 
 class App extends Component {
@@ -9,9 +8,7 @@ class App extends Component {
     console.log(this.props);
     return (
       <AppWrapper>
-        <div className="app">
-          <Login />
-        </div>
+        <Routes />
       </AppWrapper>
     )
   }

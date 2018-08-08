@@ -1,5 +1,7 @@
 import React from 'react';
 import LoginWrapper from './Login.style';
+import google_logo from '../../img/google_logo.png';
+import send_icon from '../../img/send.png';
 
 class Login extends React.Component {
   render() {
@@ -19,11 +21,11 @@ class Login extends React.Component {
             <div id="customBtn" className="customGPlusSignIn">
               <span className="icon">
                 <p className="optional-text">Sign In</p>
-                <img src="https://google-developers.appspot.com/identity/sign-in/g-normal.png" alt="" />
+                <img src={google_logo} alt="Google-Logo" />
               </span>
               <span className="buttonText">Login with Google</span>
               <span className="send-icon">
-                <img src="https://image.flaticon.com/icons/png/128/60/60525.png" alt="" />
+                <img src={send_icon} alt="Send-Icon" />
               </span>
             </div>
           </div>

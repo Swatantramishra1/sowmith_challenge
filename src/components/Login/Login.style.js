@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import login_background from '../../img/cms-sign-in.jpg';
+import google_logo from '../../img/google_logo.png';
+import send_icon from '../../img/send.png';
 
 const LoginWrapper = styled.div`
 
@@ -75,7 +77,7 @@ const LoginWrapper = styled.div`
           justify-content: center;
           align-content: center;
           background-color: #fff;
-          padding: 5px;
+          padding: 5px 8px 5px 5px;
           width: 60px;
           border-radius: 25px;
           margin-left: -1px;
@@ -90,6 +92,7 @@ const LoginWrapper = styled.div`
             margin: 0 0 0 -44px;
             opacity: 0;
             color: #000;
+            pointer-events: none;
           }
   
         }
@@ -123,11 +126,11 @@ const LoginWrapper = styled.div`
           .icon {
             justify-content: space-around;
             align-items: center;
-            width: 214px;
+            width: 211px;
 
             img {
               opacity: 0;
-              background: url('https://image.flaticon.com/icons/png/128/60/60525.png') 100%/10% no-repeat;
+              background: url(${send_icon}) 100%/10% no-repeat;
             }
 
             p {
