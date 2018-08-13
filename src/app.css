@@ -38,9 +38,3 @@ body {
 ::-webkit-scrollbar-thumb:active {
   background-color: #108ee99c;
 }
-
-@media (min-width: 1600px) {
-  .container {
-    max-width: 1600px;
-  }
-}

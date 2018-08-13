@@ -5,6 +5,7 @@ const HomeWrapper = styled.div`
         height:100vh;
         max-height: 100vh;
         overflow: hidden;
+        padding: 20px;
         .side-menu{
             width:20%;
         }

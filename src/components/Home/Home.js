@@ -10,7 +10,7 @@ class Home extends Component {
     render() {
         return (
             <HomeWrapper>
-                <div className="flex container home-container">
+                <div className="flex home-container">
                     <div className="side-menu">
                         <SideMenu />
                     </div>

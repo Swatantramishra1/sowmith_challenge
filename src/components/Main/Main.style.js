@@ -5,7 +5,7 @@ const MainWrapper = Styled.div`
         flex-direction:column;
         .content {
             padding:15px;
-            height: calc(100vh - 100px);
+            height: calc(100vh - 133px);
             overflow: auto;
             border: 1px solid;
         }
