@@ -3,7 +3,7 @@ import {Router,Switch,Route,Redirect} from 'react-router-dom';
 import {history} from './History';
 import { connect } from 'react-redux';
 import Login from '../src/components/Login/Login';
-import Home from '../src/components/Home/Home.component';
+import Home from '../src/components/Home/Home';
 
 const PrivateRoute = ({ component: Component, isAuth, ...rest }) => (
   <Route {...rest} render={(props) => (

@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import HomeWrapper from './Home.style';
-import SideMenu from '../SideMenu/Side.menu.component';
-import Main from '../Main/Main.component';
+import SideMenu from '../SideMenu/SideMenu';
+import Main from '../Main/Main';
+
 class Home extends Component {
 
 
     render() {
         return (
             <HomeWrapper>
-                <div className="flex home-container">
+                <div className="flex container home-container">
                     <div className="side-menu">
                         <SideMenu />
                     </div>

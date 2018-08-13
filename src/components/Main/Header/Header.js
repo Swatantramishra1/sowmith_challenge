@@ -6,7 +6,7 @@ class Header extends Component {
         return (
             <HeaderWrapper>
                 <div className="flex header-container">
-                      <img src="http://via.placeholder.com/30x30" alt="" srcset=""/>
+                      <img className="user-icon" src="http://via.placeholder.com/30x30" alt="" />
                 </div>
             </HeaderWrapper>
         )

@@ -1,19 +1,16 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import SideMenuWrapper from './Side.menu.style';
-import Logo from './Logo/Logo.component';
-import MenuComponent from '../SideMenu/Menu/Menu.component';
+import SideMenuWrapper from './SideMenu.style';
+import Logo from './Logo/Logo';
+import MenuComponent from '../SideMenu/Menu/Menu';
+
 class SideMenu extends Component {
     render() {
         return (
             <SideMenuWrapper>
                  <div className="flex side-menu-container">
-                    <div className="logo-container">
-                            <Logo />
-                    </div>
-                    <div className="menu-container">
-                       <MenuComponent />
-                    </div>
+                    <Logo />
+                    <MenuComponent />
                  </div>
             </SideMenuWrapper>
         )

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import MainContentWrapper from './MainComponent.style';
+import MainContentWrapper from './MainContent.style';
 import { Card, Col, Row } from 'antd';
 
 class MainContent extends Component {
