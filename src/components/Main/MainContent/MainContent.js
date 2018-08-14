@@ -7,7 +7,7 @@ class MainContent extends Component {
     render() {
         return (
             <MainContentWrapper>
-                <Row gutter={16}>
+                <Row gutter={0}>
                     <Col span={8}>
                         <Card title="No Of IC" bordered={false}>10</Card>
                     </Col>

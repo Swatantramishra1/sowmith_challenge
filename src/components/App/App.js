@@ -1,15 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
-
 import Routes from '../../Routes';
 import AppWrapper from './App.style';
 
-class App extends Component {
+class App extends React.Component {
   render() {
-    
-    console.log(this.props);
     return (
-
       <AppWrapper>
         <Routes />
       </AppWrapper>

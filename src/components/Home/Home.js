@@ -1,12 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
 import HomeWrapper from './Home.style';
 import SideMenu from '../SideMenu/SideMenu';
 import Main from '../Main/Main';
 
-class Home extends Component {
-
-
+class Home extends React.Component {
     render() {
         return (
             <HomeWrapper>

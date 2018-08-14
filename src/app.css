@@ -15,7 +15,10 @@ body {
   margin: 0 auto;
 }
 .ant-card {
-  margin: 5px 10px !important;
+  background: transparent !important;
+}
+.ant-menu-inline, .ant-menu-vertical, .ant-menu-vertical-left {
+  border: 1px solid transparent;
 }
 ::-webkit-scrollbar {
   width: 7px !important;
