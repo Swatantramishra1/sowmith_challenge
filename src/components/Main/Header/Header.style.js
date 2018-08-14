@@ -5,7 +5,8 @@ const HeaderWrapper = Styled.div`
     .header-container{
         justify-content: flex-end;
         padding:10px;
-        border: 1px solid black;
+        margin:5px;
+        box-shadow:0 0 5px 1px #b2b2b2;
         .user-icon {
             border-radius:50%;
         }

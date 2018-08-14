@@ -5,15 +5,17 @@ const MainWrapper = Styled.div`
         flex-direction:column;
         .content {
             padding:15px;
-            height: calc(100vh - 133px);
+            height: calc(100vh - 142px);
             overflow: auto;
-            border: 1px solid;
+            margin:5px;
+            box-shadow: 0 0 5px 1px #b2b2b2;
         }
         .second-half-content{
            
         }
         .footer {
-            border: 1px solid;
+            margin:5px;
+            box-shadow: 0 0 5px 1px #b2b2b2;
             padding: 10px;
         }
 

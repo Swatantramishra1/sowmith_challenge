@@ -3,7 +3,13 @@ import Styled from 'styled-components';
 const ShortCutsWrapper = Styled.div`
     
 .short-cuts-container {
-    flex:1;
+    .user-shortcuts {
+        justify-content: space-evenly;
+        font-size:48px;
+    }
+    .users-shortcuts-heading {
+        font-size:18px;
+        }
 }
 
 `;
