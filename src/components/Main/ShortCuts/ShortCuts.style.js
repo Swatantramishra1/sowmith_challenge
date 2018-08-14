@@ -6,8 +6,19 @@ const ShortCutsWrapper = Styled.div`
     height: calc(100vh - 362px);
     .short-cuts-container {
         .user-shortcuts {
-            justify-content: space-evenly;
-            font-size:48px;
+            font-size:24px;
+            .ant-btn {
+                width: 32px;
+                padding: 0 9px;
+                overflow: hidden;
+                margin: 0 5px;
+                font-size: 16px;
+                transition: all 0.3s ease-out;
+                border: none;
+                &:hover {
+                    width: 100px;
+                }
+            }
         }
         .users-shortcuts-heading {
             font-size:18px;

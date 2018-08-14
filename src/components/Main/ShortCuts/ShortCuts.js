@@ -1,17 +1,17 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import ShortCutsWrapper from './ShortCuts.style';
-import { Card, Icon } from 'antd';
+import { Card, Button } from 'antd';
 
 const ShortCuts = () => {
   return (
     <ShortCutsWrapper>
       <div className="short-cuts-container">
         <Card title="Frequently Used Options" bordered={false}>
-          <h3 className="users-shortcuts-heading">Users Shortcuts</h3>
+          <p className="users-shortcuts-heading">User Shortcuts</p>
           <div className="flex user-shortcuts">
-            <Icon type="user-add" />
-            <Icon type="edit" />
+            <Button icon="user-add">Add User</Button>
+            <Button icon="edit">Edit User</Button>
           </div>
         </Card>
       </div>

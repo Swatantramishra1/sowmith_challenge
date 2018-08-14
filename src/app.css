@@ -1,7 +1,23 @@
+@font-face {
+  font-family: 'regular_regular';
+  src: url('./static/fonts/Regular/Regular-Regular.otf')  format("opentype");
+}
+@font-face {
+  font-family: 'regular_medium';
+  src: url('./static/fonts/Regular/Regular-Medium.otf')  format("opentype");
+}
+@font-face {
+  font-family: 'regular_semibold';
+  src: url('./static/fonts/Regular/Regular-Semibold.otf')  format("opentype");
+}
 *, *:before, *:after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: regular_medium;
+}
+h1, h2, h3, h4, h5, h6, .ant-card-head-title {
+  font-family: regular_semibold;
 }
 body {
   background-color: rgb(241, 243, 246) !important;
