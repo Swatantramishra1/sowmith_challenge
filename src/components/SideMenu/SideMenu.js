@@ -8,10 +8,8 @@ class SideMenu extends Component {
     render() {
         return (
             <SideMenuWrapper>
-                 <div className="flex side-menu-container">
-                    <Logo />
-                    <MenuComponent />
-                 </div>
+                <Logo />
+                <MenuComponent />
             </SideMenuWrapper>
         )
     }

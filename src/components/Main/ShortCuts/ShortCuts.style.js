@@ -16,7 +16,8 @@ const ShortCutsWrapper = Styled.div`
                 transition: all 0.3s ease-out;
                 border: none;
                 &:hover {
-                    width: 100px;
+                    width: 110px;
+                    border: 1px solid;
                 }
             }
         }

@@ -6,12 +6,6 @@ const HomeWrapper = styled.div`
         max-height: 100vh;
         overflow: hidden;
         padding: 20px;
-        .side-menu{
-            width:20%;
-        }
-        .main {
-            width:80%;
-        }
     }
 `;
 export default HomeWrapper;

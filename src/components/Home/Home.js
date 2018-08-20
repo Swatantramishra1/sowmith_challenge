@@ -9,12 +9,8 @@ class Home extends React.Component {
         return (
             <HomeWrapper>
                 <div className="flex home-container">
-                    <div className="side-menu">
-                        <SideMenu />
-                    </div>
-                    <div className="main">
-                        <Main />
-                    </div>
+                    <SideMenu />
+                    <Main />
                 </div>
             </HomeWrapper>
         )

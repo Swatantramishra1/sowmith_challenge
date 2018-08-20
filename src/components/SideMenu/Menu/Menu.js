@@ -1,4 +1,6 @@
 import React from 'react';
+import {history} from '../../../History';
+import {Link} from 'react-router-dom';
 import { Menu, Icon } from 'antd';
 import MenuWrapper from './Menu.style';
 
