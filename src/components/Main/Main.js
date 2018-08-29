@@ -14,7 +14,11 @@ class Main extends React.Component {
             <MainWrapper>
                 <Header />
                     <div className="content">
-                        <AddUser />
+                        <Switch>
+                            <Route exact path='/home' component={Dashboard} />
+                            <Route exact path='/home/users/add' component={AddUser} />
+                            <Route exact path='/home/users/update' component={UpdateUser} />
+                        </Switch>
                     </div>
                 <Footer />
             </MainWrapper>

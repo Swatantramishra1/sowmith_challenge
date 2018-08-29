@@ -1,12 +1,43 @@
 import React from 'react';
+import { history } from '../../../History';
+import { connect } from 'react-redux';
 import HeaderWrapper from './Header.style';
+import { GoogleLogout } from 'react-google-login';
+import { logout } from '../../../redux/actions/Auth/AuthActions';
 
-const Header = () => {
-    return (
-        <HeaderWrapper>
-            <img className="user-icon" src="http://via.placeholder.com/30x30" alt="" />
-        </HeaderWrapper>
-    )
+class Header extends React.Component {
+    
+    constructor() {
+        super();
+
+        this.handleLogout = this.handleLogout.bind(this);
+    }
+
+    handleLogout() {
+        console.log('call logout');
+        this.props.logout();
+        history.push('/');
+    }
+    
+    render() {
+        return (
+            <HeaderWrapper>
+                <GoogleLogout
+                    buttonText="Logout"
+                    onLogoutSuccess={this.handleLogout}
+                >
+                </GoogleLogout>
+            </HeaderWrapper>
+        )
+    }
 }
 
-export default Header;
+function mapStateToProps(state) {
+    return state;
+}
+
+const mapDispatchToProps = {
+    logout
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Header);
