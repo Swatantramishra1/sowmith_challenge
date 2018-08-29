@@ -5,6 +5,7 @@ import MainWrapper from './Main.style';
 import Header from './Header/Header';
 import Dashboard from './Dashboard/Dashboard';
 import Footer from './Footer/Footer';
+import AddUser from '../Users/AddUser/AddUser';
 import UpdateUser from '../Users/UpdateUser/UpdateUser';
 
 class Main extends React.Component {
@@ -12,9 +13,9 @@ class Main extends React.Component {
         return (
             <MainWrapper>
                 <Header />
-                <div className="content">
-                    <Route exact path='/home' component={UpdateUser} />
-                </div>
+                    <div className="content">
+                        <AddUser />
+                    </div>
                 <Footer />
             </MainWrapper>
         )
