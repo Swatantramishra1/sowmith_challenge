@@ -6,6 +6,7 @@ import Main from '../Main/Main';
 
 class Home extends React.Component {
     render() {
+        console.log(this.props);
         return (
             <HomeWrapper>
                 <div className="flex home-container">

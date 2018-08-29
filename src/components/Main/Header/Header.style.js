@@ -12,6 +12,9 @@ const HeaderWrapper = Styled.div`
     .user-icon {
         border-radius:50%;
     }
+    .logout-btn {
+        height: 30px;
+    }
 
 `;
 

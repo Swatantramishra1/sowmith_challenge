@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { history } from '../../../History';
-import { GoogleLogout } from 'react-google-login';
+import { Button } from 'antd';
 import HeaderWrapper from './Header.style';
 import { logout } from '../../../redux/actions/Auth/AuthActions';
 
@@ -14,6 +14,8 @@ class Header extends React.Component {
     }
 
     handleLogout() {
+        console.log('call logout');
+        sessionStorage.clear();
         this.props.logout();
         history.push('/');
     }
@@ -21,11 +23,7 @@ class Header extends React.Component {
     render() {
         return (
             <HeaderWrapper>
-            <GoogleLogout
-                buttonText="Logout"
-                onLogoutSuccess={this.handleLogout}
-            >
-            </GoogleLogout>
+                <Button type='default' className="logout-btn" onClick={this.handleLogout}>LOGOUT</Button>
             </HeaderWrapper>
         )
     }
@@ -39,4 +37,4 @@ const mapDispatchToProps = {
     logout
 };
 
-export default connect (mapStateToProps, mapDispatchToProps)(Header);
+export default connect(mapStateToProps, mapDispatchToProps)(Header);

@@ -1,9 +1,9 @@
-export const AUTHREDUCER =  (state = { isAuth: false, user: {} }, action) => {
-  switch(action.type){
+export const AUTHREDUCER = (state = { isAuth: false, user: {} }, action) => {
+  switch(action.type) {
     case 'LOGIN_REQUEST':
-    return {
-        ...state,
-        isAuth: 'in-process'
+      return {
+        isAuth: 'in-process',
+        user: {}
       };
     case 'LOGIN_SUCCESS':
       return {

@@ -16,6 +16,7 @@ class Login extends React.Component {
     this.handleRequest = this.handleRequest.bind(this);
     this.handleSuccess = this.handleSuccess.bind(this);
     this.handleFailure = this.handleFailure.bind(this);
+    this.handleLoginClick = this.handleLoginClick.bind(this);
   }
 
   handleRequest() {
@@ -29,6 +30,10 @@ class Login extends React.Component {
   handleFailure(response) {
     this.props.loginFailure();
     history.push('/');
+  }
+
+  handleLoginClick() {
+    document.querySelector('.hidden-login-btn').click();
   }
   
   render() {
@@ -47,12 +52,13 @@ class Login extends React.Component {
           <div className="right-half">
             <GoogleLogin
               clientId={config.client_id}
+              className="hidden-login-btn"
               buttonText="Login"
               onRequest={this.handleRequest}
               onSuccess={this.handleSuccess}
               onFailure={this.handleFailure}
             />
-            <div id="customBtn" className="customGPlusSignIn">
+            <div id="customBtn" className="customGPlusSignIn" onClick={this.handleLoginClick}>
               <span className="icon">
                 <p className="optional-text">Sign In</p>
                 <img src={google_logo} alt="Google-Logo" />
