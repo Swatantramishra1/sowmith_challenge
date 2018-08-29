@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Router, Switch, Route, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import MainWrapper from './Main.style';
 import Header from './Header/Header';
@@ -14,7 +14,11 @@ class Main extends React.Component {
             <MainWrapper>
                 <Header />
                     <div className="content">
-                        <AddUser />
+                        <Switch>
+                            <Route exact path='/home' component={Dashboard} />
+                            <Route exact path='/home/users/add' component={AddUser} />
+                            <Route exact path='/home/users/update' component={UpdateUser} />
+                        </Switch>
                     </div>
                 <Footer />
             </MainWrapper>
@@ -30,4 +34,4 @@ const mapDispatchToProps = {
 
 }
 
-export default connect(mapToStateProps, mapDispatchToProps)(Main);
+export default withRouter(connect(mapToStateProps, mapDispatchToProps)(Main));
