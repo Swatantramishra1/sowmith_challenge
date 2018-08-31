@@ -25,7 +25,7 @@ class Routes extends React.Component {
         <Switch>
           <Route exact path='/' component={Login} />
           <Route exact path='/login' component={Login} />
-          <Route exact path='/home' component={Home} />
+          <Route  path='/home' component={Home} />
           <Route component={NotFound} />
           {/*<PrivateRoute path='/dashboard' isAuth={this.props.AUTHREDUCER.isAuth} component={Protected} />
           <PrivateRoute path='/profile' isAuth={this.props.AUTHREDUCER.isAuth} component={UserProfile} />
