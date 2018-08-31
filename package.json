@@ -1,9 +1,8 @@
 {
-  "name": "create-react-app-antd",
+  "name": "sowmith_challenge",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "antd": "^3.7.2",
     "babel-plugin-import": "^1.8.0",
     "history": "^4.7.2",
     "npm": "^6.2.0",
